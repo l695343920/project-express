@@ -29,7 +29,7 @@ const path = require("path");
  */
 const publicPath = path.join(__dirname + "./../public/upload/");
 
-const dest = multer({ dest: "upload_tmp/" });
+const dest = multer({ dest: publicPath });
 
 upload.post("/api/public/upload", dest.any(), (req, res, next) => {
   const des_file = publicPath + req.files[0].originalname;
@@ -41,7 +41,9 @@ upload.post("/api/public/upload", dest.any(), (req, res, next) => {
         const response = {
           code: 200,
           message: "上传成功!",
-          data: { url: req.files[0].originalname },
+          data: {
+            url: `http://121.5.152.57:3001/upload/${req.files[0].originalname}`,
+          },
         };
         res.send(response);
       }
