@@ -9,6 +9,7 @@ const expressJwt = require("express-jwt");
 const { secret } = require("./utils/utils");
 const book = require("./routes/book");
 const user = require("./routes/user");
+const upload = require("./routes/upload");
 const path = require("path");
 const app = express();
 
@@ -26,6 +27,7 @@ app.use(
 
 app.use(book);
 app.use(user);
+app.use(upload);
 
 app.use(
   expressJwt({

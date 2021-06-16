@@ -6,6 +6,7 @@ const express = require("express");
 const upload = express.Router();
 const multer = require("multer");
 const fs = require("fs");
+const path = require("path");
 
 /**
  * @api {post} /api/public/upload 上传图片
@@ -26,24 +27,23 @@ const fs = require("fs");
  * @apiSampleRequest http://localhost:3001/api/public/upload
  * @apiVersion 1.0.0
  */
-multer({ dest: "upload_tmp/" });
+const publicPath = path.join(__dirname + "./../public/upload/");
 
-upload.post("/api/public/upload", (req, res, next) => {
-  console.log(req.files[0]); // 上传的文件信息
+const dest = multer({ dest: "upload_tmp/" });
 
-  const des_file = "./../public/upload/" + req.files[0].originalname;
+upload.post("/api/public/upload", dest.any(), (req, res, next) => {
+  const des_file = publicPath + req.files[0].originalname;
   fs.readFile(req.files[0].path, function (err, data) {
     fs.writeFile(des_file, data, function (err) {
       if (err) {
         console.log(err);
       } else {
-        response = {
+        const response = {
           code: 200,
-          message: "文件上传",
+          message: "上传成功!",
           data: { url: req.files[0].originalname },
         };
-        console.log(response);
-        res.end(JSON.stringify(response));
+        res.send(response);
       }
     });
   });
