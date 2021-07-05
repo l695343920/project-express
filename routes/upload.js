@@ -29,7 +29,7 @@ const path = require("path");
  */
 const publicPath = path.join(__dirname + "./../public/upload/");
 
-const dest = multer({ dest: publicPath });
+const dest = multer({ dest: "public/upload/" });
 
 upload.post("/api/public/upload", dest.any(), (req, res, next) => {
   const des_file = publicPath + req.files[0].originalname;

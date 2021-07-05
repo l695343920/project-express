@@ -1,0 +1,1150 @@
+2021-07-03 19:10 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:10 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;
+2021-07-03 19:10 +08:00: [
+2021-07-03 19:10 +08:00:   permission {
+2021-07-03 19:10 +08:00:     dataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:10 +08:00:     _previousDataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:10 +08:00:     _changed: Set(0) {},
+2021-07-03 19:10 +08:00:     _options: {
+2021-07-03 19:10 +08:00:       isNewRecord: false,
+2021-07-03 19:10 +08:00:       _schema: null,
+2021-07-03 19:10 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:10 +08:00:       raw: true,
+2021-07-03 19:10 +08:00:       attributes: [Array]
+2021-07-03 19:10 +08:00:     },
+2021-07-03 19:10 +08:00:     isNewRecord: false
+2021-07-03 19:10 +08:00:   },
+2021-07-03 19:10 +08:00:   permission {
+2021-07-03 19:10 +08:00:     dataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:10 +08:00:     _previousDataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:10 +08:00:     _changed: Set(0) {},
+2021-07-03 19:10 +08:00:     _options: {
+2021-07-03 19:10 +08:00:       isNewRecord: false,
+2021-07-03 19:10 +08:00:       _schema: null,
+2021-07-03 19:10 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:10 +08:00:       raw: true,
+2021-07-03 19:10 +08:00:       attributes: [Array]
+2021-07-03 19:10 +08:00:     },
+2021-07-03 19:10 +08:00:     isNewRecord: false
+2021-07-03 19:10 +08:00:   },
+2021-07-03 19:10 +08:00:   permission {
+2021-07-03 19:10 +08:00:     dataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:10 +08:00:     _previousDataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:10 +08:00:     _changed: Set(0) {},
+2021-07-03 19:10 +08:00:     _options: {
+2021-07-03 19:10 +08:00:       isNewRecord: false,
+2021-07-03 19:10 +08:00:       _schema: null,
+2021-07-03 19:10 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:10 +08:00:       raw: true,
+2021-07-03 19:10 +08:00:       attributes: [Array]
+2021-07-03 19:10 +08:00:     },
+2021-07-03 19:10 +08:00:     isNewRecord: false
+2021-07-03 19:10 +08:00:   },
+2021-07-03 19:10 +08:00:   permission {
+2021-07-03 19:10 +08:00:     dataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:10 +08:00:     _previousDataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:10 +08:00:     _changed: Set(0) {},
+2021-07-03 19:10 +08:00:     _options: {
+2021-07-03 19:10 +08:00:       isNewRecord: false,
+2021-07-03 19:10 +08:00:       _schema: null,
+2021-07-03 19:10 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:10 +08:00:       raw: true,
+2021-07-03 19:10 +08:00:       attributes: [Array]
+2021-07-03 19:10 +08:00:     },
+2021-07-03 19:10 +08:00:     isNewRecord: false
+2021-07-03 19:10 +08:00:   },
+2021-07-03 19:10 +08:00:   permission {
+2021-07-03 19:10 +08:00:     dataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:10 +08:00:     _previousDataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:10 +08:00:     _changed: Set(0) {},
+2021-07-03 19:10 +08:00:     _options: {
+2021-07-03 19:10 +08:00:       isNewRecord: false,
+2021-07-03 19:10 +08:00:       _schema: null,
+2021-07-03 19:10 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:10 +08:00:       raw: true,
+2021-07-03 19:10 +08:00:       attributes: [Array]
+2021-07-03 19:10 +08:00:     },
+2021-07-03 19:10 +08:00:     isNewRecord: false
+2021-07-03 19:10 +08:00:   },
+2021-07-03 19:10 +08:00:   permission {
+2021-07-03 19:10 +08:00:     dataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:10 +08:00:     _previousDataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:10 +08:00:     _changed: Set(0) {},
+2021-07-03 19:10 +08:00:     _options: {
+2021-07-03 19:10 +08:00:       isNewRecord: false,
+2021-07-03 19:10 +08:00:       _schema: null,
+2021-07-03 19:10 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:10 +08:00:       raw: true,
+2021-07-03 19:10 +08:00:       attributes: [Array]
+2021-07-03 19:10 +08:00:     },
+2021-07-03 19:10 +08:00:     isNewRecord: false
+2021-07-03 19:10 +08:00:   }
+2021-07-03 19:10 +08:00: ]
+2021-07-03 19:11 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:11 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;
+2021-07-03 19:11 +08:00: [
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   }
+2021-07-03 19:11 +08:00: ]
+2021-07-03 19:11 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:11 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;
+2021-07-03 19:11 +08:00: [
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   }
+2021-07-03 19:11 +08:00: ]
+2021-07-03 19:11 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:11 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;
+2021-07-03 19:11 +08:00: [
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   }
+2021-07-03 19:11 +08:00: ]
+2021-07-03 19:11 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:11 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;
+2021-07-03 19:11 +08:00: [
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   }
+2021-07-03 19:11 +08:00: ]
+2021-07-03 19:11 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:11 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;
+2021-07-03 19:11 +08:00: [
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   },
+2021-07-03 19:11 +08:00:   permission {
+2021-07-03 19:11 +08:00:     dataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _previousDataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:11 +08:00:     _changed: Set(0) {},
+2021-07-03 19:11 +08:00:     _options: {
+2021-07-03 19:11 +08:00:       isNewRecord: false,
+2021-07-03 19:11 +08:00:       _schema: null,
+2021-07-03 19:11 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:11 +08:00:       raw: true,
+2021-07-03 19:11 +08:00:       attributes: [Array]
+2021-07-03 19:11 +08:00:     },
+2021-07-03 19:11 +08:00:     isNewRecord: false
+2021-07-03 19:11 +08:00:   }
+2021-07-03 19:11 +08:00: ]
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;
+2021-07-03 19:14 +08:00: [
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   }
+2021-07-03 19:14 +08:00: ]
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;
+2021-07-03 19:14 +08:00: [
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   }
+2021-07-03 19:14 +08:00: ]
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;
+2021-07-03 19:14 +08:00: [
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   }
+2021-07-03 19:14 +08:00: ]
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;
+2021-07-03 19:14 +08:00: [
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   }
+2021-07-03 19:14 +08:00: ]
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;
+2021-07-03 19:14 +08:00: [
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   }
+2021-07-03 19:14 +08:00: ]
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;
+2021-07-03 19:14 +08:00: [
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   }
+2021-07-03 19:14 +08:00: ]
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;
+2021-07-03 19:14 +08:00: [
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   }
+2021-07-03 19:14 +08:00: ]
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:14 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;
+2021-07-03 19:14 +08:00: [
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 1, name: '新增图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 2, name: '编辑图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 3, name: '删除图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 4, name: '查看图书', meanId: 3, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 5, name: '新增用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   },
+2021-07-03 19:14 +08:00:   permission {
+2021-07-03 19:14 +08:00:     dataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _previousDataValues: { id: 6, name: '删除用户', meanId: 5, disabled: false },
+2021-07-03 19:14 +08:00:     _changed: Set(0) {},
+2021-07-03 19:14 +08:00:     _options: {
+2021-07-03 19:14 +08:00:       isNewRecord: false,
+2021-07-03 19:14 +08:00:       _schema: null,
+2021-07-03 19:14 +08:00:       _schemaDelimiter: '',
+2021-07-03 19:14 +08:00:       raw: true,
+2021-07-03 19:14 +08:00:       attributes: [Array]
+2021-07-03 19:14 +08:00:     },
+2021-07-03 19:14 +08:00:     isNewRecord: false
+2021-07-03 19:14 +08:00:   }
+2021-07-03 19:14 +08:00: ]
+2021-07-03 19:17 +08:00: Executing (default): SELECT `id`, `parentId`, `code`, `name`, `path`, `meta`, `redirect`, `component`, `children`, `permission` FROM `mean` AS `mean`;
+2021-07-03 19:17 +08:00: Executing (default): SELECT `id`, `name`, `meanId`, `disabled` FROM `permission` AS `permission`;

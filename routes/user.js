@@ -74,7 +74,7 @@ user.get("/api/user/list", async (req, res) => {
       name: {
         [Op.like]: `%${name}%`,
       },
-      create_time,
+      // create_time:'2021-06-06',
     },
     order: [["create_time", "DESC"]],
     offset: (pageNum - 1) * limit,
@@ -203,19 +203,27 @@ checkRequire(user, {
       label: "name",
       value: "用户名",
     },
-    {
-      label: "password",
-      value: "密码",
-    },
   ],
 });
 
 //新增用户
 user.post("/api/user/add", async (req, res, next) => {
-  const { name, password, avatar } = req.body;
-  const data = await await UserModel.create({
+  const { name, avatar } = req.body;
+  let find_name = await UserModel.findOne({
+    where: {
+      name,
+    },
+  });
+  if (find_name) {
+    return res.status(400).send({
+      code: 400,
+      message: "用户名已存在!",
+      data: null,
+    });
+  }
+  const data = await UserModel.create({
     name,
-    password,
+    pass_word: "$2a$08$jHRWnbtP3zu28T5lDYTTa.bwdQOwJ2mUOnaC45tO9siJsqYrthm0a",
     avatar,
     create_time: moment().format(format),
   });
@@ -255,9 +263,21 @@ checkRequire(user, {
   ],
 });
 
-//删除图书
+//删除用户
 user.post("/api/user/del", async (req, res) => {
   const { id } = req.body;
+  //查询用户
+  const user = await UserModel.findOne({
+    where: { id },
+  });
+  //超级管理员不能删除
+  if (user.roleId === 1) {
+    return res.status(400).send({
+      code: 400,
+      data: null,
+      message: "超级管理员不能删除!",
+    });
+  }
   const data = await UserModel.destroy({
     where: { id },
   });
@@ -312,11 +332,11 @@ checkRequire(user, {
   ],
 });
 
-//修改图书
+//修改用户
 user.post("/api/user/edit", async (req, res, next) => {
-  const { id, name, content } = req.body;
+  const { id, name, avatar, password } = req.body;
   const data = await UserModel.update(
-    { name, content },
+    { name, avatar, pass_word: hashSync(password, 8) },
     {
       where: {
         id,
@@ -359,7 +379,7 @@ checkRequire(user, {
   ],
 });
 
-//查看图片详情
+//查看用户详情
 user.get("/api/user/detail", async (req, res) => {
   const { id } = req.query;
   const data = await UserModel.findOne({

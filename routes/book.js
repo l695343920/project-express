@@ -1,7 +1,7 @@
 /*
- * @Descripttion: books
+ * @Descripttion: 图书模块
  * @Date: 2021-05-05 12:16:48
- * @LastEditTime: 2021-06-05 09:26:37
+ * @LastEditTime: 2021-07-03 12:41:02
  */
 const express = require("express");
 const book = express.Router();

@@ -521,6 +521,13 @@ define({ "api": [
           },
           {
             "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>接口具体数据</p>"
+          },
+          {
+            "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "code",
@@ -901,5 +908,181 @@ define({ "api": [
     "version": "1.0.0",
     "filename": "routes/user.js",
     "groupTitle": "用户列表"
+  },
+  {
+    "type": "post",
+    "url": "/api/user/login",
+    "title": "用户登录",
+    "description": "<p>用户登录</p>",
+    "name": "login",
+    "group": "用户列表",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "name",
+            "description": "<p>用户名</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "password",
+            "description": "<p>密码</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>接口具体数据</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "code",
+            "description": "<p>结果码</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>消息说明</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"code\" : \"200\",\n    \"message\":\"true\",\n    \"data\" : {}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "http://localhost:3001/api/user/login"
+      }
+    ],
+    "version": "1.0.0",
+    "filename": "routes/user.js",
+    "groupTitle": "用户列表"
+  },
+  {
+    "type": "get",
+    "url": "/api/mean/list",
+    "title": "菜单查询",
+    "description": "<p>菜单查询</p>",
+    "name": "list",
+    "group": "菜单列表",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>接口具体数据</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "data.id",
+            "description": "<p>菜单id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.code",
+            "description": "<p>菜单编码</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data.meta",
+            "description": "<p>菜单属性</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.name",
+            "description": "<p>菜单名称</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.path",
+            "description": "<p>菜单路径</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "data.parentId",
+            "description": "<p>菜单父级id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data.permission",
+            "description": "<p>菜单权限</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.redirect",
+            "description": "<p>菜单重定向</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>消息说明</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "code",
+            "description": "<p>结果码</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"code\" : \"200\",\n    \"message\":\"true\",\n    \"data\" : [{\n       \"children\": null,\n       \"code\": \"100\",\n       \"component\": null,\n       \"id\": 1,\n       \"meta\": null,\n       \"name\": \"工作台\",\n       \"parentId\": 1,\n       \"path\": \"/work\",\n       \"permission\": [],\n       \"redirect\": \"\"\n    }]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "http://localhost:3001/api/mean/list"
+      }
+    ],
+    "version": "1.0.0",
+    "filename": "routes/mean.js",
+    "groupTitle": "菜单列表"
   }
 ] });

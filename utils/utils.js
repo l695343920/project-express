@@ -2,6 +2,11 @@
  * @Descripttion: utils
  * @Date: 2021-05-24 21:19:59
  */
+//时间格式
+const format = "YYYY-MM-DD HH:mm:ss";
+
+// 签名的密钥
+const secret = "fdfhfjdfdjfdjerwrereresaassa2dd@ddds";
 
 //去除首尾空格
 const trim = (str) => {
@@ -34,14 +39,31 @@ const checkRequire = (router, config) => {
   });
 };
 
-//时间格式
-const format = "YYYY-MM-DD HH:mm:ss";
-
-// 签名的密钥
-const secret = "fdfhfjdfdjfdjerwrereresaassa2dd@ddds";
+//处理层级数据
+const relation = (arr, config) => {
+  let map = new Object();
+  const { key = "id", children, as } = config;
+  const [defaultArr, afterArr] = arr;
+  //存储所有的id
+  defaultArr.forEach((obj) => {
+    obj[children] = [];
+    map[obj[key]] = obj;
+  });
+  //组装数据
+  afterArr.forEach((obj) => {
+    let value = map[obj[as]];
+    if (value) {
+      value[children].push(obj);
+    }
+  });
+  //获取最终值
+  let data = Object.values(map);
+  return data;
+};
 
 module.exports = {
   checkRequire,
   format,
   secret,
+  relation,
 };

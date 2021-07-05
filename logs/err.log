@@ -1,0 +1,14 @@
+2021-07-03 19:17 +08:00: Sat, 03 Jul 2021 11:17:56 GMT express deprecated res.send(body, status): Use res.status(status).send(body) instead at routes\mean.js:53:9
+2021-07-03 19:17 +08:00: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 11111111
+2021-07-03 19:17 +08:00:     at ServerResponse.writeHead (_http_server.js:259:11)
+2021-07-03 19:17 +08:00:     at ServerResponse._implicitHeader (_http_server.js:250:8)
+2021-07-03 19:17 +08:00:     at write_ (_http_outgoing.js:711:9)
+2021-07-03 19:17 +08:00:     at ServerResponse.end (_http_outgoing.js:825:5)
+2021-07-03 19:17 +08:00:     at ServerResponse.send (D:\vite\project-express\node_modules\express\lib\response.js:221:10)
+2021-07-03 19:17 +08:00:     at ServerResponse.json (D:\vite\project-express\node_modules\express\lib\response.js:267:15)
+2021-07-03 19:17 +08:00:     at ServerResponse.send (D:\vite\project-express\node_modules\express\lib\response.js:158:21)
+2021-07-03 19:17 +08:00:     at D:\vite\project-express\routes\mean.js:53:9
+2021-07-03 19:17 +08:00:     at Array.forEach (<anonymous>)
+2021-07-03 19:17 +08:00:     at D:\vite\project-express\routes\mean.js:52:8 {
+2021-07-03 19:17 +08:00:   code: 'ERR_HTTP_INVALID_STATUS_CODE'
+2021-07-03 19:17 +08:00: }

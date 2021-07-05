@@ -1,25 +1,23 @@
 /*
- * @Descripttion: 用户模型
- * @Date: 2021-06-05 11:07:00
+ * @Descripttion: 角色模型
+ * @Date: 2021-07-03 12:42:51
  */
 const { DataTypes, NOW } = require("sequelize");
 const db = require("./../db/index");
 const moment = require("moment");
 const { format } = require("./../utils/utils");
 
-const UserModel = db.define(
-  "user",
+const RoleModel = db.define(
+  "role",
   {
     // 注明主键
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
     },
-    roleId: DataTypes.INTEGER,
-    roleName: DataTypes.STRING(10),
-    name: DataTypes.STRING(10),
-    avatar: DataTypes.STRING,
-    pass_word: DataTypes.STRING(20),
+    name: DataTypes.STRING(30),
+    meanId: DataTypes.STRING(200),
+    permissionsId: DataTypes.STRING(200),
     create_time: {
       type: DataTypes.DATE(6),
       defaultValue: NOW,
@@ -30,8 +28,8 @@ const UserModel = db.define(
     },
   },
   {
-    tableName: "user",
+    tableName: "role",
   }
 );
 
-module.exports = UserModel;
+module.exports = RoleModel;
