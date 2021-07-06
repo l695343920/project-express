@@ -208,7 +208,7 @@ checkRequire(user, {
 
 //新增用户
 user.post("/api/user/add", async (req, res, next) => {
-  const { name, avatar } = req.body;
+  const { name, avatar, roleId } = req.body;
   let find_name = await UserModel.findOne({
     where: {
       name,
@@ -225,6 +225,7 @@ user.post("/api/user/add", async (req, res, next) => {
     name,
     pass_word: "$2a$08$jHRWnbtP3zu28T5lDYTTa.bwdQOwJ2mUOnaC45tO9siJsqYrthm0a",
     avatar,
+    roleId,
     create_time: moment().format(format),
   });
   res.send({
