@@ -16,7 +16,6 @@ const UserModel = db.define(
       primaryKey: true,
     },
     roleId: DataTypes.INTEGER,
-    roleName: DataTypes.STRING(10),
     name: DataTypes.STRING(10),
     avatar: DataTypes.STRING,
     pass_word: DataTypes.STRING(20),

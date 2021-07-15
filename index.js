@@ -1,7 +1,7 @@
 /*
  * @Descripttion: 入口文件
  * @Date: 2021-05-03 16:19:08
- * @LastEditTime: 2021-07-03 15:49:11
+ * @LastEditTime: 2021-07-15 03:44:18
  */
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -11,6 +11,7 @@ const book = require("./routes/book");
 const user = require("./routes/user");
 const upload = require("./routes/upload");
 const mean = require("./routes/mean");
+const role = require("./routes/role");
 const path = require("path");
 const app = express();
 
@@ -30,13 +31,14 @@ app.use(book);
 app.use(user);
 app.use(upload);
 app.use(mean);
+app.use(role);
 
 app.use(
   expressJwt({
     secret, // 签名的密钥
     algorithms: ["HS256"],
   }).unless({
-    path: ["/api/mean/list", "/api/user/login", "/api/public/upload"], // 指定路径不经过 Token 解析
+    path: ["/api/user/login", "/api/public/upload"], // 指定路径不经过 Token 解析
   })
 );
 

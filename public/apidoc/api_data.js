@@ -498,6 +498,13 @@ define({ "api": [
             "optional": false,
             "field": "password",
             "description": "<p>密码</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "avatar",
+            "description": "<p>头像</p>"
           }
         ]
       }
@@ -505,20 +512,6 @@ define({ "api": [
     "success": {
       "fields": {
         "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "string",
-            "optional": false,
-            "field": "avatar",
-            "description": "<p>头像</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "string",
-            "optional": false,
-            "field": "create_time",
-            "description": "<p>创建时间</p>"
-          },
           {
             "group": "Success 200",
             "type": "Object",
@@ -785,13 +778,6 @@ define({ "api": [
             "optional": false,
             "field": "name",
             "description": "<p>用户名</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "string",
-            "optional": false,
-            "field": "avatar",
-            "description": "<p>头像</p>"
           },
           {
             "group": "Parameter",
@@ -1084,5 +1070,467 @@ define({ "api": [
     "version": "1.0.0",
     "filename": "routes/mean.js",
     "groupTitle": "菜单列表"
+  },
+  {
+    "type": "post",
+    "url": "/api/role/add",
+    "title": "新增角色",
+    "description": "<p>新增角色</p>",
+    "name": "add",
+    "group": "角色列表",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "name",
+            "description": "<p>角色名</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>接口具体数据</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "code",
+            "description": "<p>结果码</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>消息说明</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"code\" : \"200\",\n    \"message\":\"true\",\n    \"data\" : {}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "http://localhost:3001/api/role/add"
+      }
+    ],
+    "version": "1.0.0",
+    "filename": "routes/role.js",
+    "groupTitle": "角色列表"
+  },
+  {
+    "type": "post",
+    "url": "/api/role/del",
+    "title": "删除角色",
+    "description": "<p>删除角色</p>",
+    "name": "del",
+    "group": "角色列表",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "id",
+            "description": "<p>标识</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "code",
+            "description": "<p>结果码</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>消息说明</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>接口具体数据</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"code\" : \"200\",\n    \"message\":\"true\",\n    \"data\" : {}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "http://localhost:3001/api/role/del"
+      }
+    ],
+    "version": "1.0.0",
+    "filename": "routes/role.js",
+    "groupTitle": "角色列表"
+  },
+  {
+    "type": "get",
+    "url": "/api/role/detail",
+    "title": "角色详情",
+    "description": "<p>角色详情</p>",
+    "name": "detail",
+    "group": "角色列表",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "id",
+            "description": "<p>标识</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "code",
+            "description": "<p>结果码</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>消息说明</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>接口具体数据</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"code\" : \"200\",\n    \"message\":\"true\",\n    \"data\" : {}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "http://localhost:3001/api/role/detail"
+      }
+    ],
+    "version": "1.0.0",
+    "filename": "routes/role.js",
+    "groupTitle": "角色列表"
+  },
+  {
+    "type": "post",
+    "url": "/api/role/edit",
+    "title": "修改角色",
+    "description": "<p>修改角色</p>",
+    "name": "edit",
+    "group": "角色列表",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "id",
+            "description": "<p>标识</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "name",
+            "description": "<p>角色名</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "code",
+            "description": "<p>结果码</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>消息说明</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>接口具体数据</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"code\" : \"200\",\n    \"message\":\"true\",\n    \"data\" : {}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "http://localhost:3001/api/role/edit"
+      }
+    ],
+    "version": "1.0.0",
+    "filename": "routes/role.js",
+    "groupTitle": "角色列表"
+  },
+  {
+    "type": "get",
+    "url": "/api/role/list",
+    "title": "分页查询",
+    "description": "<p>分页查询</p>",
+    "name": "list",
+    "group": "角色列表",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "name",
+            "description": "<p>角色名</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "pageIndex",
+            "description": "<p>页码</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "pageSize",
+            "description": "<p>页数</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>接口具体数据</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "data.data",
+            "description": "<p>列表数据</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.data.id",
+            "description": "<p>角色id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.data.name",
+            "description": "<p>角色名</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.data.meanId",
+            "description": "<p>菜单id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.data.permissionId",
+            "description": "<p>权限id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "data.total",
+            "description": "<p>总条数</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "data.pageIndex",
+            "description": "<p>页数</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "data.pageSize",
+            "description": "<p>页码</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>消息说明</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "code",
+            "description": "<p>结果码</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"code\" : \"200\",\n    \"message\":\"true\",\n    \"data\" : [\n      data:[{\n        \"id\":'',\n        \"name\" : \"\",\n        \"meanId\" : \"\",\n        \"permissionId\":\"\"\n      }],\n      total:0,\n      pageIndex:1,\n      pageSize:10,\n    ]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "http://localhost:3001/api/role/list"
+      }
+    ],
+    "version": "1.0.0",
+    "filename": "routes/role.js",
+    "groupTitle": "角色列表"
+  },
+  {
+    "type": "post",
+    "url": "/api/role/login",
+    "title": "角色登录",
+    "description": "<p>角色登录</p>",
+    "name": "login",
+    "group": "角色列表",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "name",
+            "description": "<p>角色名</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "password",
+            "description": "<p>密码</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>接口具体数据</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "code",
+            "description": "<p>结果码</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>消息说明</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"code\" : \"200\",\n    \"message\":\"true\",\n    \"data\" : {}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "http://localhost:3001/api/role/login"
+      }
+    ],
+    "version": "1.0.0",
+    "filename": "routes/role.js",
+    "groupTitle": "角色列表"
   }
 ] });

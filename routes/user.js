@@ -8,6 +8,7 @@ const { hashSync, compareSync } = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { checkRequire, secret, format } = require("./../utils/utils");
 const UserModel = require("./../model/user");
+const RoleModel = require("./../model/role");
 const moment = require("moment");
 const { Op } = require("sequelize");
 
@@ -17,7 +18,6 @@ const { Op } = require("sequelize");
  * @apiName list
  * @apiGroup 用户列表
  * @apiParam {string} name 用户名
- * @apiParam {string} avatar 头像
  * @apiParam {string} create_time 创建时间
  * @apiParam {string} pageIndex 页码
  * @apiParam {string} pageSize 页数
@@ -64,21 +64,45 @@ checkRequire(user, {
   ],
 });
 
-//图书列表
+//用户列表
 user.get("/api/user/list", async (req, res) => {
-  const { pageIndex, pageSize, name = "", create_time = "" } = req.query;
+  const {
+    pageIndex,
+    pageSize,
+    name = "",
+    start_time = "",
+    end_time = "",
+  } = req.query;
   const pageNum = Number(pageIndex);
   const limit = Number(pageSize);
-  const { count, rows } = await UserModel.findAndCountAll({
-    where: {
-      name: {
-        [Op.like]: `%${name}%`,
-      },
-      // create_time:'2021-06-06',
+  RoleModel.hasOne(UserModel);
+  UserModel.belongsTo(RoleModel);
+
+  //组装搜索条件
+  let search = {
+    name: {
+      [Op.like]: `%${name}%`,
     },
+  };
+  //查询时间范围
+  if (start_time && end_time) {
+    search.create_time = {
+      [Op.between]: [start_time, end_time],
+    };
+  }
+  const { count, rows } = await UserModel.findAndCountAll({
+    where: search,
     order: [["create_time", "DESC"]],
     offset: (pageNum - 1) * limit,
     limit,
+    include: [
+      {
+        // include关键字表示关联查询
+        model: RoleModel, // 指定关联的model
+        attributes: [["name", "roleName"]],
+      },
+    ],
+    raw: true, // 这个属性表示开启原生查询，原生查询支持的功能更多，自定义更强
   });
   res.send({
     code: 200,
@@ -156,9 +180,9 @@ user.post("/api/user/login", async (req, res, next) => {
   const token = jwt.sign(
     {
       id: String(data._id),
+      exp: Math.floor(Date.now() / 1000) + 1 * 60,
     },
-    secret,
-    { expiresIn: 0.5 * 60 }
+    secret
   );
   const { create_time } = data.dataValues;
   data.dataValues.token = token;
@@ -181,8 +205,7 @@ user.post("/api/user/login", async (req, res, next) => {
  * @apiGroup 用户列表
  * @apiParam {string} name 用户名
  * @apiParam {string} password 密码
- * @apiSuccess {string} avatar 头像
- * @apiSuccess {string} create_time 创建时间
+ * @apiParam {string} avatar 头像
  * @apiSuccess {Object} data 接口具体数据
  * @apiSuccess {String} code 结果码
  * @apiSuccess {String} message 消息说明
