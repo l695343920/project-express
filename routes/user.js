@@ -99,10 +99,9 @@ user.get("/api/user/list", async (req, res) => {
       {
         // include关键字表示关联查询
         model: RoleModel, // 指定关联的model
-        attributes: [["name", "roleName"]],
+        attributes: ["name", "id"],
       },
     ],
-    raw: true, // 这个属性表示开启原生查询，原生查询支持的功能更多，自定义更强
   });
   res.send({
     code: 200,
@@ -179,10 +178,10 @@ user.post("/api/user/login", async (req, res, next) => {
   // 3、生成token 向客户端返回token
   const token = jwt.sign(
     {
-      id: String(data._id),
-      exp: Math.floor(Date.now() / 1000) + 1 * 60,
+      data,
     },
-    secret
+    secret,
+    { expiresIn: 60 * 30 * 1 }
   );
   const { create_time } = data.dataValues;
   data.dataValues.token = token;

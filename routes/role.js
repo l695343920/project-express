@@ -4,9 +4,8 @@
  */
 const express = require("express");
 const role = express.Router();
-const { checkRequire, secret, format } = require("./../utils/utils");
+const { checkRequire } = require("./../utils/utils");
 const RoleModel = require("./../model/role");
-const moment = require("moment");
 const { Op } = require("sequelize");
 
 /**
@@ -256,7 +255,7 @@ checkRequire(role, {
 
 //修改角色
 role.post("/api/role/edit", async (req, res, next) => {
-  const { id, name } = req.body;
+  const { id, name, meanId, permissionId } = req.body;
   //超级管理员不能修改
   if (id === 1) {
     return res.status(400).send({
@@ -265,14 +264,20 @@ role.post("/api/role/edit", async (req, res, next) => {
       message: "超级管理员不能修改!",
     });
   }
-  const data = await RoleModel.update(
-    { name },
-    {
-      where: {
-        id,
-      },
-    }
-  );
+  let params = { name };
+  //更新菜单
+  if (meanId) {
+    params.meanId = meanId;
+  }
+  //更新权限
+  if (permissionId) {
+    params.permissionId = permissionId;
+  }
+  const data = await RoleModel.update(params, {
+    where: {
+      id,
+    },
+  });
   res.send({
     code: 200,
     data,

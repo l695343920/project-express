@@ -2,6 +2,8 @@
  * @Descripttion: utils
  * @Date: 2021-05-24 21:19:59
  */
+const jwt = require("jsonwebtoken");
+
 //时间格式
 const format = "YYYY-MM-DD HH:mm:ss";
 
@@ -61,9 +63,18 @@ const relation = (arr, config) => {
   return data;
 };
 
+//获取用户信息
+const getUserInfo = (req) => {
+  const token = req.headers.authorization.replace("Bearer ", "");
+  //角色信息
+  const userInfo = jwt.verify(token, secret).data;
+  return userInfo;
+};
+
 module.exports = {
   checkRequire,
   format,
   secret,
   relation,
+  getUserInfo
 };

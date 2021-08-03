@@ -1,7 +1,7 @@
 /*
  * @Descripttion: 图书模块
- * @Date: 2021-05-05 12:16:48
- * @LastEditTime: 2021-07-03 12:41:02
+ * @date: 2021-05-05 12:16:48
+ * @LastEditTime: 2021-07-24 13:48:16
  */
 const express = require("express");
 const book = express.Router();
@@ -24,7 +24,7 @@ const { Op } = require("sequelize");
  * @apiSuccess {Object[]} data.data 列表数据
  * @apiSuccess {String} data.data.name 名称
  * @apiSuccess {String} data.data.content 描述
- * @apiSuccess {String} data.data.date 创建时间
+ * @apiSuccess {String} data.data.create_time 创建时间
  * @apiSuccess {Number} data.total 总条数
  * @apiSuccess {Number} data.pageIndex 页数
  * @apiSuccess {Number} data.pageSize 页码
@@ -38,7 +38,7 @@ const { Op } = require("sequelize");
  *        data:[{
  *          "name" : "",
  *          "content" : "",
- *          "date":""
+ *          "create_time":""
  *        }],
  *        total:0,
  *        pageIndex:1,
@@ -77,7 +77,7 @@ book.get("/api/book/list", async (req, res) => {
         [Op.like]: `%${content}%`,
       },
     },
-    order: [["date", "DESC"]],
+    order: [["create_time", "DESC"]],
     offset: (pageNum - 1) * limit,
     limit,
   });
@@ -133,7 +133,7 @@ book.post("/api/book/add", async (req, res, next) => {
   const data = await await BookModel.create({
     name,
     content,
-    date: moment().format(format),
+    create_time: moment().format(format),
   });
   res.send({
     code: 200,

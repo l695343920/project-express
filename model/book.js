@@ -17,11 +17,11 @@ const BookModel = db.define(
     },
     name: DataTypes.STRING(20),
     content: DataTypes.STRING(100),
-    date: {
+    create_time: {
       type: DataTypes.DATE(6),
       defaultValue: NOW,
       get() {
-        const rawValue = this.getDataValue("date");
+        const rawValue = this.getDataValue("create_time");
         return rawValue && moment(rawValue).format(format);
       },
     },

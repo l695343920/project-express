@@ -1,17 +1,17 @@
 /*
- * @Descripttion: 菜单模块
- * @Date: 2021-07-03 12:40:13
+ * @Descripttion: 权限模块
+ * @Date: 2021-07-25 20:05:09
  */
 const express = require("express");
-const mean = express.Router();
+const permission = express.Router();
 const MeanModel = require("./../model/mean");
 const PermissionModel = require("./../model/permission");
 const RoleModel = require("./../model/role");
-const { relation, getUserInfo } = require("./../utils/utils");
+const { checkRequire } = require("./../utils/utils");
 const { Op } = require("sequelize");
 
 /**
- * @api {get} /api/mean/list 菜单查询
+ * @api {get} /api/permission/list 菜单查询
  * @apiDescription 菜单查询
  * @apiName list
  * @apiGroup 菜单列表
@@ -39,7 +39,7 @@ const { Op } = require("sequelize");
  *         "name": "工作台",
  *         "parentId": 1,
  *         "path": "/work",
- *         "permission": [],
+ *         "children": [],
  *         "redirect": ""
  *      }]
  *  }
@@ -47,10 +47,20 @@ const { Op } = require("sequelize");
  * @apiVersion 1.0.0
  */
 
+checkRequire(permission, {
+  type: "/api/permission/list",
+  rules: [
+    {
+      label: "roleId",
+      value: "角色id",
+    },
+  ],
+});
+
 //菜单列表
-mean.get("/api/mean/list", async (req, res) => {
+permission.get("/api/permission/list", async (req, res) => {
   //角色id
-  const roleId = getUserInfo(req).roleId;
+  const { roleId } = req.query;
   let role;
   let meanParams = {};
   let permissionParams = {};
@@ -84,11 +94,7 @@ mean.get("/api/mean/list", async (req, res) => {
     where: permissionParams,
   });
   //获取最终值
-  let data = relation([mean, permission], {
-    key: "id",
-    children: "permission",
-    as: "meanId",
-  });
+  let data = [...mean, ...permission];
   res.send({
     code: 200,
     data,
@@ -96,4 +102,4 @@ mean.get("/api/mean/list", async (req, res) => {
   });
 });
 
-module.exports = mean;
+module.exports = permission;
